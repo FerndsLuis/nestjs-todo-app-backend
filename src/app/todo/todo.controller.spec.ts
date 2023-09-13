@@ -4,8 +4,6 @@ import { TodoService } from './todo.service';
 import { TodoEntity } from './entity/todo.entity';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto copy';
-import { isDataURI } from 'class-validator';
-import { asapScheduler } from 'rxjs';
 
 const todoEntityList: TodoEntity[] = [
   new TodoEntity({ id: '1', task: 'task-1', isDone: 0 }),
@@ -71,9 +69,7 @@ describe('TodoController', () => {
       expect(todoController.index()).rejects.toThrow();
     });
   });
-  // Arrange
-  // Act
-  // Assert
+
   describe('create', () => {
     it('should create a new tpdp ote, successfuly', async () => {
       // Arrange

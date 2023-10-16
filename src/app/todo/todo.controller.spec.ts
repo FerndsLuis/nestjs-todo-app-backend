@@ -3,7 +3,7 @@ import { TodoController } from './todo.controller';
 import { TodoService } from './todo.service';
 import { TodoEntity } from './entity/todo.entity';
 import { CreateTodoDto } from './dto/create-todo.dto';
-import { UpdateTodoDto } from './dto/update-todo.dto copy';
+import { UpdateTodoDto } from './dto/update-todo.dto';
 
 const todoEntityList: TodoEntity[] = [
   new TodoEntity({ id: '1', task: 'task-1', isDone: 0 }),

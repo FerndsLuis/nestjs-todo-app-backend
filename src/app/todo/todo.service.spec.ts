@@ -5,7 +5,7 @@ import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { NotFoundException } from '@nestjs/common';
 import { CreateTodoDto } from './dto/create-todo.dto';
-import { UpdateTodoDto } from './dto/update-todo.dto copy';
+import { UpdateTodoDto } from './dto/update-todo.dto';
 
 const todoEntityList: TodoEntity[] = [
   new TodoEntity({ task: 'task-1', isDone: 0 }),
